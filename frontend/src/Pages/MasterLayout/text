@@ -1,0 +1,33 @@
+    //   {loading ? (
+    //     <RingLoader
+    //       color="#09c"
+    //       size={200}
+    //       cssOverride={{
+    //         position: "absolute",
+    //         top: "50%",
+    //         left: "50%",
+    //         transform: "translate(-50% , -50%)",
+    //       }}
+    //     />
+    //   ) : (
+        // <div className="d-flex flex-column">
+        //   {userData !== null ? ((userData[2] === "hospital") ? <nav className="navbar navbar-expand-lg bg-body-tertiar px-5 py-0 d-flex justify-content-between">
+        //     <h3 className="d-text"> مرحبا {userData[1]}</h3>
+        //     <Link
+        //       className="nav-link mx-5"
+        //       to="/"
+        //     >
+        //       الرئيسية
+        //     </Link>
+        //     <Link
+        //       className="navbar-link d-icon"
+        //       to="/hospital"
+        //     >
+        //       <i className="fa-solid fa-user-gear"></i>
+        //     </Link>
+        //   </nav> : <Navbar userData={userData}></Navbar>
+        //   ) : (
+        //     <Navbar userData={userData}></Navbar>
+        //   )}
+        // </div>
+        // )}

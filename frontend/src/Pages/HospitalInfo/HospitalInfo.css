@@ -1,0 +1,18 @@
+.hosp-info .name {
+    background-image: url("./pexels-jonathan-meyer-668300.jpg");
+    background-position: left center;
+    background-size: cover;
+
+}
+
+.hosp-info .name h2 {
+    font-size: 3rem;
+    color: white;
+    font-weight: 400;
+}
+.hosp-info .name p {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+}

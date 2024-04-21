@@ -1,0 +1,615 @@
+/* ================================= Start  Global Rules ================================= */
+:root {
+  --main-color: #09c;
+  --secand-color: #002050;
+  --main-transition: all 0.3s linear;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Kufi Arabic", sans-serif !important;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+.title {
+  text-align: center !important;
+  position: relative;
+}
+
+.special-title {
+  text-transform: capitalize;
+  font-size: 4rem;
+  font-weight: 800;
+  color: #dee3e4;
+}
+
+.special-title+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%) !important;
+  -webkit-transform: translate(50%, -50%);
+  -moz-transform: translate(50%, -50%);
+  -ms-transform: translate(50%, -50%);
+  -o-transform: translate(50%, -50%);
+}
+
+.special-title::after {
+  content: "";
+  height: 3px;
+  width: 10rem;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.swal2-styled.swal2-confirm {
+  background-color: #09c !important;
+  padding: 0.5rem 3rem;
+}
+
+.page {
+  min-height: 100vh;
+}
+
+.dashboard-title {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center !important;
+  position: relative;
+}
+
+.dashboard-title::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 10rem;
+  bottom: -15px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--main-color);
+}
+
+.dashboard-title::before {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  bottom: -40px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  z-index: 222;
+  border: 4px solid var(--main-color);
+}
+
+fieldset.scheduler-border {
+  border: 3px solid #01749b;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+legend.scheduler-border {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  width: auto;
+  z-index: 222;
+  background: white;
+  padding: 0.5rem 1rem;
+  border: 3px solid #01749b;
+  border-radius: 10px;
+}
+
+.custom-btn {
+  width: 50%;
+  display: block !important;
+  margin: 1rem auto !important;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.4rem;
+}
+
+.pdf-box h3 span {
+  font-weight: bolder;
+}
+
+.pdf-box {
+  position: relative;
+}
+
+.pdf-box i {
+  font-size: 2.5rem;
+  position: absolute;
+  left: 0;
+  transform: translate(50%, 50%);
+  cursor: pointer;
+}
+
+.pdf-box img {
+  transition: .3s all linear;
+}
+
+.pdf-box:hover img {
+  transform: rotate(-5deg);
+}
+
+/* ================================= End  Global Rules ================================= */
+
+/* Start Navbar  */
+.navbar {
+  z-index: 2222;
+  background-color: #002050;
+}
+
+.navbar .logo {
+  color: white;
+  font-size: 2rem;
+}
+
+.navbar .wrapper .link {
+  margin: 0 1rem;
+  position: relative;
+}
+
+.navbar .navbtn {
+  display: none;
+  transition: 10s display ease-in-out;
+
+}
+
+.navbar .wrapper .link::after,
+.navbar .wrapper .link.active::before {
+  content: "";
+  height: 3px;
+  background: white;
+  position: absolute;
+  bottom: -16px;
+  transform-origin: center;
+  left: 50%;
+  width: 0%;
+  transform: translateX(-50%);
+  transition: all .3s linear;
+}
+
+.navbar .wrapper .link:hover::after,
+.navbar .wrapper .link.active::before {
+  width: 100%;
+}
+
+.navbar .wrapper .link i {
+  display: none;
+}
+
+.navbar .wrapper .link span {
+  font-size: 1rem;
+}
+
+.navbar .user-icon {
+  color: white;
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+  box-shadow: -2px 1px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.navbar .user-icon:hover {
+  box-shadow: -2px 1px #09c;
+  color: white;
+}
+
+.navbar .user-text {
+  color: white;
+  font-size: 1rem;
+  margin: 0 10px;
+}
+
+/* End Navbar  */
+/* Start Home  */
+/* ========================== Strat Header */
+#header {
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  position: relative;
+}
+
+#header::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+#header .container {
+  z-index: 22;
+}
+
+#header .container .title {
+  line-height: 1.8;
+  font-weight: 800;
+  font-size: 1.6rem;
+}
+
+#header .container .title span {
+  font-weight: 500;
+}
+
+#header .link {
+  width: 50%;
+}
+
+/* ========================== End Header */
+/* ========================== Start ICUDESC */
+#definition p {
+  line-height: 1.9;
+  font-weight: 500;
+}
+
+/* ========================== End ICUDESC */
+/* ========================== End Top rate */
+#topRate .pic {
+  flex-basis: calc((100% / 3) - 1rem);
+  overflow: hidden;
+  position: relative;
+}
+
+#topRate .pic img {
+  width: 100%;
+  height: 300px;
+  transition: transform 0.4s linear;
+}
+
+#topRate .pic:hover img {
+  transform: scale(1.2);
+}
+
+#topRate .info {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.6s linear;
+  text-align: center;
+}
+
+#topRate .info:hover {
+  opacity: 1;
+}
+
+/* ========================== End Top rate */
+/* ========================== Start Log in */
+.login-select {
+  border: #09c 3px solid;
+  border-radius: 15px;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#login .ineer {
+  display: flex;
+  padding: 1.3rem;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #09c;
+  width: 250px;
+  height: 150px;
+  color: white;
+  border-radius: 10px;
+  margin: auto;
+  cursor: pointer;
+  transition: 0.3s linear transform;
+}
+
+#login .ineer:hover {
+  transform: scale(1.1) !important;
+}
+
+#login .ineer .icon {
+  font-size: 2rem;
+  border: 3px solid;
+  padding: 0.5rem;
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+}
+
+#login .ineer .text {
+  font-size: 2rem;
+  padding: 0.5rem;
+  font-weight: 500;
+}
+
+/* ========================== Start Hospital */
+/* ========================== End Hospital */
+#hospital .icon {
+  background-color: #09c;
+  width: 50px;
+  height: 50px;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: 0 auto;
+}
+
+#hospital .inner {
+  transition: transform 0.3s ease-in-out;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#hospital .inner:hover {
+  transform: scale(0.9) !important;
+}
+
+#hospital .go-hosp {
+  text-decoration: none;
+  color: black;
+}
+
+/* ========================== End Log in */
+/* End Home  */
+
+/* Start ICU  */
+#icu .img {
+  height: 350px;
+}
+
+/* End ICU  */
+/* Start ICU Info  */
+.icuinfo .com .usercomment {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #09c;
+  box-shadow: 0 0 10px rgb(190, 190, 190);
+}
+
+.icuinfo .com .commentText {
+  background-color: #F0F2F5;
+  border-radius: 10px;
+}
+
+.icuinfo .com .commentText p {
+  margin: 0;
+  padding: 0;
+  font-size: .9rem;
+  font-weight: 300;
+  color: black;
+}
+
+.icuinfo .com .commentText h6 {
+  margin: 0;
+  padding: 0;
+  font-size: .7rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.555);
+}
+
+.icuinfo .sm-img {
+  cursor: pointer;
+  opacity: .6;
+  transition: opacity ease-in-out .3s;
+}
+
+
+.icuinfo .sm-img:hover {
+  opacity: 1;
+}
+
+.icuinfo .big-img {
+  transition: all 2s ease-in-out;
+  height: 400px;
+}
+
+#UserBook .title,
+#main_user .info,
+.icuinfo .pinfo {
+  padding: 0.5rem;
+  font-weight: 900;
+  line-height: 1.9;
+  color: white;
+  width: 100%;
+  background-color: #002050;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+#UserBook .info,
+#main_user .info+p,
+.icuinfo h5 {
+  line-height: 1.9;
+  white-space: break-spaces;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  color: #002050;
+  font-weight: bold;
+}
+
+/* End ICU Info  */
+/* Start ADS  */
+#ads img {
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  width: 80px;
+  transform: translate(-50%, -50%);
+}
+
+#ads .text {
+  line-height: 1.8;
+  white-space: break-spaces;
+}
+
+/* End ADS  */
+/* Start Log in  */
+#log_in small span {
+  cursor: pointer;
+}
+
+/* End Log in  */
+/*  Dashboard  */
+/* ========================== Start Sidebar */
+.sidebar {
+  width: 300px;
+  background: #002050;
+  position: relative;
+  border-top: 3px solid #09c;
+  border-left: 3px solid #09c;
+}
+
+
+.sidebar .nav-item .item,
+.logout {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  padding: 0.5rem;
+  margin: 10px 0;
+}
+
+.sidebar .nav-item .item i,
+.logout i {
+  font-size: 1.3rem;
+}
+
+.sidebar .nav-item .item h6,
+.logout h6 {
+  padding: 0 0.5rem;
+}
+
+.logout {
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+/* ========================== End Sidebar */
+#add-hospital,
+#addAds,
+#adsViwe,
+#view-hospital,
+#add_icu,
+#booking,
+#showeErh,
+#patients,
+#icuviwe,
+#UserBook,
+#main_user,
+#archives,
+#adderh {
+  width: calc(100% - 80px);
+  position: relative;
+}
+
+/*  Dashboard  */
+
+.text-confirm {
+  margin: 0;
+  font-size: 10rem;
+  text-align: center;
+  color: var(--main-color);
+  font-weight: 600;
+  text-shadow: 7px 11px 11px rgb(204, 203, 203);
+}
+
+
+
+
+.modal.show .modal-dialog {
+  -webkit-transform: none;
+  transform: none;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.h-icon {
+  text-align: center;
+  color: white;
+  border: 2px solid #09c;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  box-shadow: 0 0 2px white;
+  margin-top: 10px;
+}
+
+.h-icon:hover {
+  color: white;
+}
+
+.h-icon i {
+  font-size: 3rem;
+}
+
+.h-container {
+  background-image: url("https://images.pexels.com/photos/668300/pexels-photo-668300.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  position: relative;
+  z-index: 12;
+  height: calc(100vh - 51px);
+  background-size: cover;
+}
+
+.h-container::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.548);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.h-name {
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.h-name span {
+  font-weight: bold;
+  font-size: 3rem;
+  padding: 20px 0;
+  display: block;
+}

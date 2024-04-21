@@ -1,0 +1,186 @@
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 12px;
+  }
+
+  .special-title {
+    font-size: 4rem;
+  }
+
+  .special-title::after {
+    width: 6rem;
+  }
+
+  .special-title+h3 {
+    font-size: 1.7rem;
+    width: 100%;
+  }
+
+  #header .link {
+    width: 100%;
+  }
+
+  legend.scheduler-border {
+    font-size: 1.3rem;
+    width: 70%;
+    text-align: center;
+  }
+
+  #add-hospital,
+  #addAds,
+  #adsViwe,
+  #view-hospital,
+  #add_icu,
+  #booking,
+  #showeErh,
+  #UserBook,
+  #main_user,
+  #patients,
+  #archives,
+  #icuviwe,
+  #adderh {
+    width: calc(100% - 80px);
+    top: 55px !important;
+  }
+
+  .dashboard-title {
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-bottom: 1rem;
+  }
+
+  .sidebar {
+    width: 70px;
+    background-color: #002050;
+    position: relative;
+    top: 80px;
+    height: 80vh;
+    right: -25px;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    padding: 20px 10px;
+    border: 1px solid #09c;
+    z-index: 100;
+  }
+
+  .sidebar ul {
+    list-style: none;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sidebar .nav-item .item,
+  .logout {
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 0 2px white;
+  }
+
+  .sidebar .nav-item .item i,
+  .logout i {
+    font-size: 2rem;
+  }
+
+  .sidebar ul .item.active {
+    border: 4px solid white;
+  }
+
+  .logout {
+    cursor: pointer;
+    transition: all 0.2s linear;
+  }
+
+  .logout:hover,
+  .sidebar ul .item:hover {
+    border: 1px solid white;
+  }
+
+  .sidebar .nav-item .item h6,
+  .logout h6 {
+    display: none;
+  }
+
+  #navbar.h-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #navbar .h-text {
+    font-size: 1.3rem;
+  }
+
+  .t-icu-viwe {
+    margin-top: 4rem;
+  }
+
+  .navbar .navbtn.active {
+    display: block;
+  }
+
+  .navbar .wrapper {
+    width: 80%;
+    margin: 0 auto;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s ease-in-out;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .navbar .wrapper.active {
+    height: 200px;
+    display: flex;
+  }
+
+  .navbar .logo {
+    width: 50%;
+  }
+
+  .navbar .wrapper .navitem {
+    width: 100%;
+
+  }
+
+  .navbar .wrapper .link i {
+    margin: 0 1rem;
+    font-size: 2.5rem;
+    display: block;
+  }
+
+  .navbar .wrapper .link {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    width: 100%;
+  }
+
+  .icuinfo .com .usercomment {
+    width: 50px;
+    height: 50px;
+  }
+
+  .navbar .wrapper .link span {
+    font-size: 1.5rem;
+  }
+
+  #UserBook .title,
+  #main_user .info,
+  .icuinfo .pinfo {
+    text-align: center;
+  }
+
+  #UserBook .info,
+  #main_user .info+p,
+  .icuinfo h5 {
+    text-align: center;
+  }
+
+}
