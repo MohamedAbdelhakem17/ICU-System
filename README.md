@@ -1,7 +1,3 @@
-Here's your updated README file with links for installing the prerequisites:
-
----
-
 # Getting Started with ICU App
 
 ## Description
