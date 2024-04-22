@@ -1,9 +1,8 @@
-Sure, here's the updated README file with instructions for setting up the backend and database:
+Here's your updated README file with links for installing the prerequisites:
 
 ---
 
-# Getting Started with ICu App
-
+# Getting Started with ICU App
 
 ## Description
 This project is a full-stack application built using React for the front end and [Backend Framework] for the backend.
@@ -12,8 +11,8 @@ This project is a full-stack application built using React for the front end and
 To get started with this project, follow these steps:
 
 ### Prerequisites
-1. Install Node.js environment on your machine.
-2. Install XAMPP for providing a local server environment.
+1. Install [Node.js](https://nodejs.org/en/download/) environment on your machine.
+2. Install [XAMPP](https://www.apachefriends.org/index.html) for providing a local server environment.
 
 ### Backend Setup
 1. Move the backend folder to the `htdocs` directory in XAMPP. You can find XAMPP installed in the `C` partition by default.
@@ -49,3 +48,6 @@ To get started with this project, follow these steps:
 
    This command will start the development server and launch the project in your default web browser.
 
+---
+
+This README file provides detailed instructions for setting up both the frontend and backend/database components of the ICU app, along with links for installing the prerequisites. If you have any further questions or need additional assistance, feel free to ask!
