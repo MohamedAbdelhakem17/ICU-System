@@ -1,7 +1,7 @@
 # Getting Started with ICU App
 
 ## Description
-This project is a full-stack application built using React for the front end and [Backend Framework] for the backend.
+This project is a full-stack application built using React for the front end and PHP,mysql for the backend.
 
 ## Getting Started
 To get started with this project, follow these steps:
